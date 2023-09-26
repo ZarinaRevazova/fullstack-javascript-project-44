@@ -1,2 +1,4 @@
 #!/usr/bin/env node
-Welcome to the Brain Games!
+import { requestName } from "../src/cli.js";
+
+requestName();
