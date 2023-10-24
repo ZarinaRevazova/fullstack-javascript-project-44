@@ -1,0 +1,42 @@
+import readlineSync from 'readline-sync';
+import { requestName } from './cli.js';
+
+export const showQuestion = (question) => console.log(`Question: ${question}`);
+export const yourAnswer = () => readlineSync.question('Your answer: ');
+
+export const gameEvenRule = () =>
+  console.log('Answer "yes" if the number is even, otherwise answer "no".');
+export const gameCalcRule = () =>
+  console.log('What is the result of the expression?');
+
+export const instruction = {
+  wrong: (yourName, answer, correctAnswer) => {
+    console.log(
+      `"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`
+    );
+    console.log(`Let's try again, ${yourName}!`);
+  },
+  correct: () => console.log('Correct!'),
+  congrats: (yourName) => console.log(`Congratulations, ${yourName}!`),
+};
+
+export const startBrainGame = (showRule, getQA) => {
+  const yourName = requestName();
+  showRule();
+
+  const amountOfPossibleQuestions = 3;
+  for (let i = 0; i < amountOfPossibleQuestions; i += 1) {
+    const { question, correctAnswer } = getQA();
+
+    showQuestion(question);
+    const answer = yourAnswer();
+
+    if (answer === correctAnswer) {
+      instruction.correct();
+    } else {
+      instruction.wrong(yourName, answer, correctAnswer);
+      return;
+    }
+  }
+  instruction.congrats(yourName);
+};
