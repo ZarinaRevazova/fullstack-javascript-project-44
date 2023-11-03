@@ -8,6 +8,14 @@ export const gameEvenRule = () =>
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
 export const gameCalcRule = () =>
   console.log('What is the result of the expression?');
+export const gameGcdRule = () =>
+  console.log('Find the greatest common divisor of given numbers.');
+
+export const getRandomNum = (min, max) => {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+};
 
 export const instruction = {
   wrong: (yourName, answer, correctAnswer) => {
