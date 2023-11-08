@@ -10,6 +10,8 @@ export const gameCalcRule = () =>
   console.log('What is the result of the expression?');
 export const gameGcdRule = () =>
   console.log('Find the greatest common divisor of given numbers.');
+export const gameProgressionRule = () =>
+  console.log('What number is missing in the progression?');
 
 export const getRandomNum = (min, max) => {
   min = Math.ceil(min);
