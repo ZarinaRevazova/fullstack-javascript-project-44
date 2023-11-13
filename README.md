@@ -12,7 +12,7 @@
 
 <p>Java Script</p>
 
-<h1>You need to install</h2>
+<h1>You need to install</h1>
 <src="https://github.com/anseki/readline-sync" alt="readline-sync library">
 
 <h1>Explanation</h1>
