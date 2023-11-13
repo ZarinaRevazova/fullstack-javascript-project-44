@@ -1,10 +1,4 @@
-import { startBrainGame, gameCalcRule } from '../src/index.js';
-
-function getRandomNum(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import { startBrainGame, gameCalcRule, getRandomNum } from '../src/index.js';
 
 const getRandomOperand = () => {
   const operators = [
@@ -22,10 +16,7 @@ const getQA = () => {
   const randomOperand = getRandomOperand();
 
   const question = `${firstRandomOperator} ${randomOperand[0]} ${secondRandomOperator}`;
-  const correctAnswer = randomOperand[1](
-    firstRandomOperator,
-    secondRandomOperator
-  ).toString();
+  const correctAnswer = randomOperand[1](firstRandomOperator, secondRandomOperator).toString();
 
   return {
     question,

@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import { getRandomNum } from '../src/index.js';
 
 const requestName = () => {
   console.log('Welcome to the Brain Games!');
@@ -7,20 +8,12 @@ const requestName = () => {
   return yourName;
 };
 
-function getRandomNum(min, max) {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 const showQuestionNumber = (question) => console.log(`Question: ${question}`);
 const yourAnswer = () => readlineSync.question('Your answer: ');
 
 const instruction = {
   wrong: (yourName, answer, correctAnswer) => {
-    console.log(
-      `"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`
-    );
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
     console.log(`Let's try again, ${yourName}!`);
   },
   correct: () => console.log('Correct!'),

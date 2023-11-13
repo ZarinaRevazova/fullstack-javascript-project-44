@@ -4,28 +4,23 @@ import { requestName } from './cli.js';
 export const showQuestion = (question) => console.log(`Question: ${question}`);
 export const yourAnswer = () => readlineSync.question('Your answer: ');
 
-export const gameEvenRule = () =>
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-export const gameCalcRule = () =>
-  console.log('What is the result of the expression?');
-export const gameGcdRule = () =>
-  console.log('Find the greatest common divisor of given numbers.');
-export const gameProgressionRule = () =>
-  console.log('What number is missing in the progression?');
+export const gameEvenRule = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
+export const gameCalcRule = () => console.log('What is the result of the expression?');
+export const gameGcdRule = () => console.log('Find the greatest common divisor of given numbers.');
+export const gameProgressionRule = () => console.log('What number is missing in the progression?');
+export const gamePrimeRule = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 export const getRandomNum = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  const minimum = Math.ceil(min);
+  const maximum = Math.floor(max);
+  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
 };
 
-export const getRandomNumber = (num) => Math.floor(Math.random() * 10);
+export const getRandomNumber = () => Math.floor(Math.random() * 10);
 
 export const instruction = {
   wrong: (yourName, answer, correctAnswer) => {
-    console.log(
-      `"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`
-    );
+    console.log(`"${answer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
     console.log(`Let's try again, ${yourName}!`);
   },
   correct: () => console.log('Correct!'),

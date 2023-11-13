@@ -16,10 +16,7 @@ const getQA = () => {
   const secondRandomOperator = getRandomNum(1, 100);
 
   const question = `${firstRandomOperator} ${secondRandomOperator}`;
-  const correctAnswer = calcGcd(
-    firstRandomOperator,
-    secondRandomOperator
-  ).toString();
+  const correctAnswer = calcGcd(firstRandomOperator, secondRandomOperator).toString();
 
   return {
     question,
