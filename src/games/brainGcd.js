@@ -1,4 +1,5 @@
-import { startBrainGame, gameGcdRule, getRandomNum } from '../src/index.js';
+import { startBrainGame, gameGcdRule } from '../index.js';
+import getRandomNum from '../utils.js';
 
 const calcGcd = (x, y) => {
   if (x === 0) {

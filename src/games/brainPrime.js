@@ -1,4 +1,5 @@
-import { startBrainGame, gamePrimeRule, getRandomNum } from '../src/index.js';
+import { startBrainGame, gamePrimeRule } from '../index.js';
+import getRandomNum from '../utils.js';
 
 const isPrimeNumber = (num) => {
   for (let i = 2; i <= Math.sqrt(num); i += 1) {

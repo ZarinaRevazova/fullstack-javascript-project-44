@@ -1,5 +1,5 @@
 import readlineSync from 'readline-sync';
-import { getRandomNum } from '../src/index.js';
+import getRandomNum from '../utils.js';
 
 const requestName = () => {
   console.log('Welcome to the Brain Games!');
@@ -24,7 +24,7 @@ const isEvenNumber = (num) => num % 2 === 0;
 const getCorrectAnswer = (choice) => (choice ? 'yes' : 'no');
 
 function getQA() {
-  const randomNum = getRandomNum(1, 1000000);
+  const randomNum = getRandomNum(1, 1000);
   const correctAnswer = getCorrectAnswer(isEvenNumber(randomNum));
 
   return {

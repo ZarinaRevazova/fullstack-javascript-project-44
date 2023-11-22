@@ -19,6 +19,7 @@
 
 <h2>How to install?</h2>
 <ul>
+<li>git clone</li>
 <li>make install</li>
 <li>make publish</li>
 <li>make link</li>
@@ -34,12 +35,23 @@
 <li>brain-prime</li>
 </ul>
 
+<h1>Asciinema game-examples</h1>
+
+<p>* Brain-Even game *</p>
 [![asciicast](https://asciinema.org/a/BEsWWk5VjPwWN1LfJAyl5nT25.svg)](https://asciinema.org/a/BEsWWk5VjPwWN1LfJAyl5nT25)
 
+<hr />
+<p>* Brain-Calc game *</p>
 [![asciicast](https://asciinema.org/a/5FDRo0aHQJiswwsvMCf0nlBbi.svg)](https://asciinema.org/a/5FDRo0aHQJiswwsvMCf0nlBbi)
 
+<hr />
+<p>* Brain-Gcd (greatest common divisor) game *</p>
 [![asciicast](https://asciinema.org/a/scnZBDTed1qHBrOzg6Hv7w2ok.svg)](https://asciinema.org/a/scnZBDTed1qHBrOzg6Hv7w2ok)
 
+<hr />
+<p>* Brain-Progression game *</p>
 [![asciicast](https://asciinema.org/a/Qk1QmKDfCoLOh5AhPZwhwi9Hp.svg)](https://asciinema.org/a/Qk1QmKDfCoLOh5AhPZwhwi9Hp)
 
+<hr />
+<p>* Brain-Prime game *</p>
 [![asciicast](https://asciinema.org/a/5GZqB5vKvXXYa3lIXXgzcxq7P.svg)](https://asciinema.org/a/5GZqB5vKvXXYa3lIXXgzcxq7P)

@@ -10,12 +10,6 @@ export const gameGcdRule = () => console.log('Find the greatest common divisor o
 export const gameProgressionRule = () => console.log('What number is missing in the progression?');
 export const gamePrimeRule = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
-export const getRandomNum = (min, max) => {
-  const minimum = Math.ceil(min);
-  const maximum = Math.floor(max);
-  return Math.floor(Math.random() * (maximum - minimum + 1)) + minimum;
-};
-
 export const getRandomNumber = () => Math.floor(Math.random() * 10);
 
 export const instruction = {

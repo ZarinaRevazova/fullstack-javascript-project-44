@@ -1,9 +1,5 @@
-import {
-  startBrainGame,
-  gameProgressionRule,
-  getRandomNum,
-  getRandomNumber,
-} from '../src/index.js';
+import { startBrainGame, gameProgressionRule, getRandomNumber } from '../index.js';
+import getRandomNum from '../utils.js';
 
 const generateArray = (startNum, progressionLength, arrayStep) => {
   const arr = [];

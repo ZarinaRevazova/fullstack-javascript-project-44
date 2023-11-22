@@ -1,4 +1,5 @@
-import { startBrainGame, gameCalcRule, getRandomNum } from '../src/index.js';
+import { startBrainGame, gameCalcRule } from '../index.js';
+import getRandomNum from '../utils.js';
 
 const getRandomOperand = () => {
   const operators = [
