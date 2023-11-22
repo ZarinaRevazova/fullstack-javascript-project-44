@@ -37,26 +37,26 @@
 
 <h1>Asciinema game-examples</h1>
 
-<p>* Brain-Even game *
+<p>* Brain-Even game *</p>
+
 [![asciicast](https://asciinema.org/a/BEsWWk5VjPwWN1LfJAyl5nT25.svg)](https://asciinema.org/a/BEsWWk5VjPwWN1LfJAyl5nT25)
-</p>
 
 <hr />
-<p>* Brain-Calc game *
+<p>* Brain-Calc game *</p>
+
 [![asciicast](https://asciinema.org/a/5FDRo0aHQJiswwsvMCf0nlBbi.svg)](https://asciinema.org/a/5FDRo0aHQJiswwsvMCf0nlBbi)
-</p>
 
 <hr />
-<p>* Brain-Gcd (greatest common divisor) game *
+<p>* Brain-Gcd (greatest common divisor) game *</p>
+
 [![asciicast](https://asciinema.org/a/scnZBDTed1qHBrOzg6Hv7w2ok.svg)](https://asciinema.org/a/scnZBDTed1qHBrOzg6Hv7w2ok)
-</p>
 
 <hr />
-<p>* Brain-Progression game *
+<p>* Brain-Progression game *</p>
+
 [![asciicast](https://asciinema.org/a/Qk1QmKDfCoLOh5AhPZwhwi9Hp.svg)](https://asciinema.org/a/Qk1QmKDfCoLOh5AhPZwhwi9Hp)
-</p>
 
 <hr />
-<p>* Brain-Prime game *
+<p>* Brain-Prime game *</p>
+
 [![asciicast](https://asciinema.org/a/5GZqB5vKvXXYa3lIXXgzcxq7P.svg)](https://asciinema.org/a/5GZqB5vKvXXYa3lIXXgzcxq7P)
-</p>
