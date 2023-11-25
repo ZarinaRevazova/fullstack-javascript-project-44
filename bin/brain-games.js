@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import { requestName } from '../src/cli.js';
+import makeWelcome from '../src/cli.js';
 
-requestName();
+makeWelcome();

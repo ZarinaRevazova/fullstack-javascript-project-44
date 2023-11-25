@@ -21,7 +21,6 @@
 <ul>
 <li>git clone</li>
 <li>make install</li>
-<li>make publish</li>
 <li>make link</li>
 </ul>
 

@@ -1,20 +1,20 @@
-import { startBrainGame, gameProgressionRule, getRandomNumber } from '../index.js';
+import { startBrainGame } from '../index.js';
 import getRandomNum from '../utils.js';
 
 const generateArray = (startNum, progressionLength, arrayStep) => {
-  const arr = [];
-  let nextNum = startNum;
+  const progression = [];
   for (let i = 0; i < progressionLength; i += 1) {
-    nextNum = startNum + arrayStep * i;
-    arr.push(nextNum);
+    progression.push(startNum + arrayStep * i);
   }
-  return arr;
+  return progression;
 };
+
+const rules = 'What number is missing in the progression?';
 
 const getQA = () => {
   const progressionLength = getRandomNum(5, 10);
   const arrayStep = getRandomNum(1, 5);
-  const startNum = getRandomNumber(10);
+  const startNum = getRandomNum(1, 10);
 
   const readyArray = generateArray(startNum, progressionLength, arrayStep);
 
@@ -32,5 +32,5 @@ const getQA = () => {
 };
 
 export default () => {
-  startBrainGame(gameProgressionRule, getQA);
+  startBrainGame(rules, getQA);
 };

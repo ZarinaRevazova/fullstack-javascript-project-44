@@ -1,16 +1,8 @@
 import readlineSync from 'readline-sync';
-import { requestName } from './cli.js';
+import makeWelcome from './cli.js';
 
 export const showQuestion = (question) => console.log(`Question: ${question}`);
 export const yourAnswer = () => readlineSync.question('Your answer: ');
-
-export const gameEvenRule = () => console.log('Answer "yes" if the number is even, otherwise answer "no".');
-export const gameCalcRule = () => console.log('What is the result of the expression?');
-export const gameGcdRule = () => console.log('Find the greatest common divisor of given numbers.');
-export const gameProgressionRule = () => console.log('What number is missing in the progression?');
-export const gamePrimeRule = () => console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-
-export const getRandomNumber = () => Math.floor(Math.random() * 10);
 
 export const instruction = {
   wrong: (yourName, answer, correctAnswer) => {
@@ -21,9 +13,9 @@ export const instruction = {
   congrats: (yourName) => console.log(`Congratulations, ${yourName}!`),
 };
 
-export const startBrainGame = (showRule, getQA) => {
-  const yourName = requestName();
-  showRule();
+export const startBrainGame = (rules, getQA) => {
+  const yourName = makeWelcome();
+  console.log(rules);
 
   const amountOfPossibleQuestions = 3;
   for (let i = 0; i < amountOfPossibleQuestions; i += 1) {

@@ -1,4 +1,4 @@
-import { startBrainGame, gamePrimeRule } from '../index.js';
+import { startBrainGame } from '../index.js';
 import getRandomNum from '../utils.js';
 
 const isPrimeNumber = (num) => {
@@ -12,6 +12,8 @@ const isPrimeNumber = (num) => {
 
 const getCorrectAnswer = (choice) => (choice ? 'yes' : 'no');
 
+const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+
 const getQA = () => {
   const randomNum = getRandomNum(1, 100);
   const correctAnswer = getCorrectAnswer(isPrimeNumber(randomNum));
@@ -22,5 +24,5 @@ const getQA = () => {
 };
 
 export default () => {
-  startBrainGame(gamePrimeRule, getQA);
+  startBrainGame(rules, getQA);
 };

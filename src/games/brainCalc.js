@@ -1,4 +1,4 @@
-import { startBrainGame, gameCalcRule } from '../index.js';
+import { startBrainGame } from '../index.js';
 import getRandomNum from '../utils.js';
 
 const getRandomOperand = () => {
@@ -10,6 +10,8 @@ const getRandomOperand = () => {
   const selectedOperator = Math.floor(Math.random() * operators.length);
   return operators[selectedOperator];
 };
+
+const rules = 'What is the result of the expression?';
 
 const getQA = () => {
   const firstRandomOperator = getRandomNum(1, 100);
@@ -26,5 +28,5 @@ const getQA = () => {
 };
 
 export default () => {
-  startBrainGame(gameCalcRule, getQA);
+  startBrainGame(rules, getQA);
 };
