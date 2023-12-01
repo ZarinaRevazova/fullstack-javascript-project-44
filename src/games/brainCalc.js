@@ -1,7 +1,7 @@
 import { startBrainGame } from '../index.js';
 import getRandomNum from '../utils.js';
 
-const getRandomOperand = () => {
+const getRandomExpression = () => {
   const operators = [
     ['+', (a, b) => a + b],
     ['-', (a, b) => a - b],
@@ -16,10 +16,11 @@ const rules = 'What is the result of the expression?';
 const getQA = () => {
   const firstRandomOperator = getRandomNum(1, 100);
   const secondRandomOperator = getRandomNum(1, 100);
-  const randomOperand = getRandomOperand();
+  const randomExpression = getRandomExpression();
+  const [operation, calculation] = randomExpression;
 
-  const question = `${firstRandomOperator} ${randomOperand[0]} ${secondRandomOperator}`;
-  const correctAnswer = randomOperand[1](firstRandomOperator, secondRandomOperator).toString();
+  const question = `${firstRandomOperator} ${[operation]} ${secondRandomOperator}`;
+  const correctAnswer = calculation(firstRandomOperator, secondRandomOperator).toString();
 
   return {
     question,
