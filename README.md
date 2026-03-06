@@ -10,7 +10,7 @@
 
 <h1>Language</h1>
 
-<p>Java Script</p>
+<p>JavaScript</p>
 
 <h1>You need to install</h1>
 <a href="https://github.com/anseki/readline-sync">readline-sync library</a>
@@ -19,9 +19,9 @@
 
 <h2>How to install?</h2>
 <ul>
-<li>git clone</li>
-<li>make install</li>
-<li>make link</li>
+`git clone`
+`make install`
+`make link`
 </ul>
 
 <h2>Using</h2>
